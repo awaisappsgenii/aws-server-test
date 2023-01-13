@@ -7,9 +7,7 @@ const { MongoClient } = require('mongodb');
 const port = process.env.PORT;
 const uri = process.env.DATABASE_CLOUD;
 
-app.use(cors({
-    origin: process.env.CLIENT_URL
-}));
+app.use(cors());
 
 app.get('/api', async (req, res) => {
   try {
