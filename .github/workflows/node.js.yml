@@ -27,3 +27,4 @@ jobs:
     - run: npm ci
     - run: npm run build --if-present
     - run: pm2 restart cicd-backend
+    - run: sudo cp /home/ubuntu/server/.env /home/ubuntu/cicd-backend/_work/aws-server-test/aws-server-test/.env
