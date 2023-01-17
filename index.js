@@ -19,6 +19,7 @@ app.get('/api', async (req, res) => {
     res.send(users);
   } catch (error) {
    console.log(error); 
+    res.send([{ _id: '1', name: 'test'}]);
   }
 });
 
